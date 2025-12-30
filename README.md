@@ -40,7 +40,7 @@ A high-level overview of the core technologies powering BlackMorror:
 
 ## 🏗️ Architecture
 
-*(A high-level schematic illustrating the modular workflow, automation engine, and system orchestration should be embedded here.)*
+*TO-DO: A high-level schematic illustrating the modular workflow, automation engine, and system orchestration should be embedded here.*
 
 ```
 [----------------]      [----------------]      [----------------]
