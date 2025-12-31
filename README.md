@@ -1,9 +1,6 @@
 #  BlackMorror - Hyperrealistic Adversary Simulation Engine (Adversarial Logic & Systemic Fragility)
 
-> **Access Note:** BlackMorror is a proprietary simulation architecture. This repository serves as a functional specification of its engine logic, behavioral frameworks, and systemic interfaces. It is a map of the machine, not the machine itself.
-
-> ⚠️ **WARNING** \
-> **Note:** Core implementation is proprietary and not included. No offensive code or exploits are included. Unauthorized use, reproduction, or commercial exploitation is prohibited.
+> ⚠️ **Protocol & Intellectual Property:** BlackMorror is a proprietary simulation architecture. This repository serves as a functional specification of its engine logic, behavioural frameworks, and systemic interfaces. It contains no offensive tooling, exploit code, or core implementation logic and core implementation remains privately held. It is an architectural map, not the engine itself. Unauthorized reproduction of this logic for commercial gain is a violation of intellectual property standards. 
 
 > Model, visualize, and anticipate cyber attack chains in a controlled simulation environment.
 
@@ -46,20 +43,20 @@ The engine treats the human layer as a dynamic variable, not a static vulnerabil
 BlackMorror does more than just "scan", it reflects. It constructs a high-fidelity shadow of your organization.
 
 - Persona Synthesis: Generates hundreds of "Ghost Employees" with realistic behavioral fingerprints to saturate the attack surface. \
-- Asymmetric Feedback Loops: Tracks how a single successful exploit in a low-value node compounds into an existential threat over a numbered temporal scale.
+- Asymmetric Feedback Loops: Tracks how a single successful exploit in a low-value node compounds into an existential threat over a 30-day scale.
 
 
 
 
 
 
-## ⏳ Temporal Dynamics & The Human yield Point (The Mechanics of Decay)
+## ⏳ Temporal Dynamics & The Human Yield Point (The Mechanics of Decay / The Physics of Failure)
 
 BlackMorror treats risk a little differently albeit realistically; It treats it as a decay function as opposed to a static snapshot.
 
 **Temporal Attack Surface Mapping (Path Dependency)** \
 The engine simulates the Compounding Debt of Choice. It maps how "temporary" configurations (e.g., legacy bypasses, technical debt) create permanent adversarial corridors over time.
-- Branching Narratives: We show more than just a breach; we show a numbered-temporal scale decay of defensive options based on today's structural choices.
+- Branching Narratives: We show more than just a breach; we show a 30-day scale decay of defensive options based on today's structural choices.
 **The Betrayal Threshold (Friction-to-Velocity Ratio)** \
 We quantify the moment the human layer becomes permeable. Utilizing a Weighted Pressure Model, the engine identifies the yield point where security protocols become a hindrance to operational necessity.
 - The Logic: As Cognitive Friction ($F$) increases relative to Organizational Velocity ($V$), the probability of "Betrayal" (protocol bypass) increases exponentially. 
@@ -116,47 +113,10 @@ To maintain architectural integrity without exposing proprietary source, the eng
 - **Vulnerability Discovery & Defense Hardening:** Proactively identify and remediate both human and technical vulnerabilities before real-world exploitation.
 
 
-## ⚙️ Key Features
-
-- **Automated Adversary Workflows:** Scenario-driven, probabilistic decision logic to model attacker behavior.
-- **Mock Environments:** Includes detailed company structures, employee personas, and web portals.
-- **Full Attack Chain Simulation:** From initial phishing to privilege escalation and data exfiltration.
-- **Advanced Visualizations:** Clearly showcases system exposure, attack paths, and potential failure points.
-- **Team Training Scenarios:** Empowers teams to understand, identify, and respond to sophisticated threats in a controlled environment.
-
-## 🛠 Tech Stack
-
-A high-level overview of the core technologies powering BlackMorror:
-
-**Containerization & Deployment**
-- **Docker**: Package and run each module in isolated containers for reproducibility and portability.
-- **Docker Compose**: Orchestrate multi-container deployments locally.
-- **VM-compatible**: Fully deployable in a local virtual machine for testing before cloud rollout.
-
-**Orchestration & Workflow Automation**
-- **n8n (optional)**: Visual workflow orchestration for connecting modules without touching core engine logic.
-- **Custom Python/Node.js scripts**: Deterministic control of attack sequences, independent of n8n.
-
-**Scenario Storage & Persistence**
-- **MongoDB (optional)**: Persistent database for scalable scenario storage and audit logging.
-- **SQLite / file-based storage**: Local, lightweight storage for MVP or development environments.
-
-**Adversary Simulation Engine**
-- **Python scripts (core engine)**: Modular attack steps executed deterministically, supporting stochastic behaviors via seeded randomness.
-- **Optional AI layer**: Adaptive or probabilistic agents for advanced simulation beyond MVP.
-
-**Web Interface & Visualization**
-- **Flask / FastAPI / Express.js**: APIs for dashboards and run inspection.
-- **ReactJS (optional)**: Interactive visualization for simulation results.
-
-**Security & Networking**
-- **Nginx with TLS**: Secure communications and optional reverse proxy for modular services.
-- **Sandboxed network simulations**: Mimic isolated corporate environments safely.
-
-**Supporting Services (Optional)**
-- **Messaging / Event Bus**: RabbitMQ or Kafka for asynchronous inter-module communication.
-- **Structured logging**: Track execution steps, errors, and simulation outcomes.
-
+## ⚙️ System Specifications
+- **Orchestration:** Distributed micro-agent architecture with asynchronous state persistence.
+- **Behavioral Logic:** Seeded stochastic agents with path-dependent heuristic optimization.
+- **Environment:** Isolated, local-first deployment (Air-Gapped compliant) with modular service injection.
 
 
 **Design Principles Reflected** \
