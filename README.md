@@ -1,9 +1,9 @@
 #  BlackMorror - Hyperrealistic Adversary Simulation Engine
 
-> [!WARNING] \
-> **Note:** This repository demonstrates the structure and capabilities of BlackMorror. Core implementation is proprietary and not included. Unauthorized use, reproduction, or commercial exploitation is prohibited.
+> ⚠️ **WARNING** \
+> **Note:** This repository demonstrates the **architecture, simulation framework, and capabilities** of BlackMorror. Core implementation is proprietary and not included. No offensive code or exploits are included. Unauthorized use, reproduction, or commercial exploitation is prohibited.
 
-> Simulate, visualize, and anticipate cyberattacks with fully automated, realistic adversary behavior.
+> Model, visualize, and anticipate cyber attack chains in a controlled simulation environment.
 
 ---
 
@@ -17,7 +17,7 @@ Designed for security teams, researchers, and executives, BlackMorror uncovers s
 
 ## ⚙️ Key Features
 
-- **Automated Adversary Workflows:** Realistic, autonomous decision-making to mimic real attackers.
+- **Automated Adversary Workflows:** Scenario-driven, probabilistic decision logic to model attacker behavior.
 - **Mock Environments:** Includes detailed company structures, employee personas, and web portals.
 - **Full Attack Chain Simulation:** From initial phishing to privilege escalation and data exfiltration.
 - **Advanced Visualizations:** Clearly showcases system exposure, attack paths, and potential failure points.
@@ -27,10 +27,43 @@ Designed for security teams, researchers, and executives, BlackMorror uncovers s
 
 A high-level overview of the core technologies powering BlackMorror:
 
-- **Containerization:** `Docker`
-- **Workflow Automation:** `n8n`
-- **Scenario Storage:** `MongoDB` (Optional Backend)
-- **Secure Communications:** `Nginx` with TLS
+**Containerization & Deployment**
+- **Docker**: Package and run each module in isolated containers for reproducibility and portability.
+- **Docker Compose**: Orchestrate multi-container deployments locally.
+- **VM-compatible**: Fully deployable in a local virtual machine for testing before cloud rollout.
+
+**Orchestration & Workflow Automation**
+- **n8n (optional)**: Visual workflow orchestration for connecting modules without touching core engine logic.
+- **Custom Python/Node.js scripts**: Deterministic control of attack sequences, independent of n8n.
+
+**Scenario Storage & Persistence**
+- **MongoDB (optional)**: Persistent database for scalable scenario storage and audit logging.
+- **SQLite / file-based storage**: Local, lightweight storage for MVP or development environments.
+
+**Adversary Simulation Engine**
+- **Python scripts (core engine)**: Modular attack steps executed deterministically, supporting stochastic behaviors via seeded randomness.
+- **Optional AI layer**: Adaptive or probabilistic agents for advanced simulation beyond MVP.
+
+**Web Interface & Visualization**
+- **Flask / FastAPI / Express.js**: APIs for dashboards and run inspection.
+- **ReactJS (optional)**: Interactive visualization for simulation results.
+
+**Security & Networking**
+- **Nginx with TLS**: Secure communications and optional reverse proxy for modular services.
+- **Sandboxed network simulations**: Mimic isolated corporate environments safely.
+
+**Supporting Services (Optional)**
+- **Messaging / Event Bus**: RabbitMQ or Kafka for asynchronous inter-module communication.
+- **Structured logging**: Track execution steps, errors, and simulation outcomes.
+
+
+
+**Design Principles Reflected** \
+Modular microservice-friendly architecture \
+Local-first deployment with zero paid dependencies at MVP \
+Extensible and upgradeable modules for future levels \
+Cloud-ready with minimal reconfiguration
+
 
 ## 📈 Impact & Use Cases
 
@@ -48,10 +81,6 @@ A high-level overview of the core technologies powering BlackMorror:
 |    Modules     |      |     Engine     |      |  Visualization |
 [----------------]      [----------------]      [----------------]
 ```
-
-## 🤝 Contributing & Extending
-
-We welcome contributions. Explore existing scenarios, contribute new simulation modules, or adapt the engine for your own security testing environment.
 
 ## 📬 Contact
 
