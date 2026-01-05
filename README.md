@@ -1,4 +1,6 @@
 #  BlackMorror - Hyperrealistic Adversary Simulation Engine (Adversarial Logic & Systemic Fragility)
+> *"Morror, Morror on the wall, \
+> Who's the most vulnerable of them all?"*
 
 > ⚠️ **Protocol & Intellectual Property:** BlackMorror is a proprietary simulation architecture. This repository serves as a functional specification of its engine logic, behavioural frameworks, and systemic interfaces. It contains no offensive tooling, exploit code, or core implementation logic and core implementation remains privately held. It is an architectural map, not the engine itself. Unauthorized reproduction of this logic for commercial gain is a violation of intellectual property standards. 
 
@@ -64,6 +66,7 @@ We quantify the moment the human layer becomes permeable. Utilizing a Weighted P
 
   $P(\text{Betrayal}) = 1 - e^{-k(F/V)}$
 
+
 BlackMorror calculates where your specific culture will break under the weight of its own rules.
 
 
@@ -91,6 +94,8 @@ BlackMorror follows a non-linear feedback loop. Every "Action on Objective" at t
          { DATA EXFIL & C2 }                                   |
                   v                                            |
       [ ANALYTICS & FORESIGHT ] -------------------------------+
+
+
 
 
 
