@@ -135,10 +135,13 @@ Cloud-ready with minimal reconfiguration
 
 
 
-## 📬 Contact
+## 📬 Access & Engagement Protocol
 
-- **Location:** Operating remotely from Nigeria
-- **Email:** [clivekaiser22@gmail.com](mailto:clivekaiser22@gmail.com)
+> BlackMorror is currently in a state of controlled disclosure. \
+**Architectural Inquiries:** For discussions regarding the engine's functional logic, behavioral seeding, or systemic integration. \
+**Access Requests:** Implementation logic is provided only to verified entities under strict NDA. \
+**Email:** clivekaiser22@gmail.com \
+**Origin:** Distributed Node // Lagos, NG
 
 ---
        
