@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="BlackMorror.png" width="300" alt="BlackMorror Logo">
+</p>
+
 #  BlackMorror - Hyperrealistic Adversary Simulation Engine (Adversarial Logic & Systemic Fragility)
 > *"Morror, Morror on the wall, \
 > Who's the most vulnerable of them all?"*
